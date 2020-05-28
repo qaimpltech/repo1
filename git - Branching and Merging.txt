@@ -1,0 +1,18 @@
+$ git status
+$ git branch MyNewBranch //MyNewBranch is a branch name
+//but this branch is not yet checkout
+//to start working on the branch we have to checkout it:
+$ git checkout MyNewBranch
+$ touch test2.txt
+$ git status
+$ git add .
+$ git commit -m "added test2.txt"
+$ git status
+$ git push -u origin MyNewBranch > $ git push MyNewBranch (because we're already on MyNewBranch)
+$ git checkout master //file "test2.txt" is disapeared in Windows folder
+//Note: when we're merging to master we have to 1st checkout master branch:
+$ git merge MyNewBranch //add
+//on github.com we cannot see test2.txt because we're not pushed changes yet:
+$ git push -u origin master //now both branches are equivalent
+$ git branch -d MyNewBranch //deleting branch from local mashine
+$ git push origin --delete "MyNewBranch" //deleting branch from remote (github.com)
