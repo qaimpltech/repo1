@@ -10,6 +10,7 @@ $ git commit -m "added test2.txt"
 $ git status
 $ git push -u origin MyNewBranch > $ git push MyNewBranch (because we're already on MyNewBranch)
 $ git checkout master //file "test2.txt" is disapeared in Windows folder
+//Now we have to merge our new branch to master branch
 //Note: when we're merging to master we have to 1st checkout master branch:
 $ git merge MyNewBranch //add
 //on github.com we cannot see test2.txt because we're not pushed changes yet:
